@@ -75,18 +75,18 @@ body {
 
 .navbar-user-button {
   background-color: #e67e22;
-  color: #333;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .navbar-user-button:hover {
-  background-color: #f1c40f;
+  background-color: #cf6e18;
   color: #fff;
 }
 
