@@ -83,6 +83,7 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 
 .navbar-user-button:hover {
@@ -170,4 +171,3 @@ body {
     font-size: 20px;
   }
 }
-

@@ -1,6 +1,7 @@
 import React from "react";
-import github from "../img/footericons/github.png";
-import linkedin from "../img/footericons/linkedin.png";
+import { Link } from "react-router-dom";
+import github from "../../img/navbaricons/github.png";
+import linkedin from "../../img/navbaricons/linkedin.png";
 
 export default function Navbar() {
   return (
@@ -14,18 +15,22 @@ export default function Navbar() {
             <a
               href="https://www.linkedin.com/in/jorgos-papapostolu/"
               className="navbar-menu-item"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={linkedin} alt="linkedinicon" />
             </a>
             <a
               href="https://github.com/JorgoPapapostolu"
               className="navbar-menu-item"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={github} alt="githubicon" />
             </a>
           </div>
           <div className="navbar-divier">
-            <button className="navbar-user-button">Login</button>
+          <Link to="/login" className="navbar-user-button">Login</Link>
           </div>
         </div>
       </div>
