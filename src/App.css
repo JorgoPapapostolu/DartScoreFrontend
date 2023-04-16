@@ -134,7 +134,7 @@ body {
   color: #949492c7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .navbar-container {
     padding: 0 10px;
     height: 60px;
@@ -159,6 +159,10 @@ body {
     padding: 8px 16px;
     margin-right: 1rem;
   }
+  
+  .navbar-divier {
+    margin-top: 0.3rem;
+  }
 
   .footer-container {
     width: 100%;
@@ -169,5 +173,152 @@ body {
 
   .footer-logo {
     font-size: 20px;
+  }
+}
+
+.startpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.startpage-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.highlighted-text {
+  color: #e67e22;
+}
+
+.startpage-container .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.startpage-container p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.startpage-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.startpage-container h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50%;
+  border-bottom: 2px solid #e67e22;
+  transform: translateX(-50%);
+}
+
+.startpage-container ul {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.startpage-container li {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e67e22;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #cf6e18;
+}
+
+@media only screen and (max-width: 768px) {
+  .startpage-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .startpage-container .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .startpage-container p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .startpage-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .startpage-container ul {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .startpage-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .startpage-container .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .startpage-container p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .startpage-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .startpage-container ul {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 4rem;
   }
 }

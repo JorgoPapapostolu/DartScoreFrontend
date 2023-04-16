@@ -1,6 +1,8 @@
 import React from "react";
 import "./login.css";
 import Google from '../../img/loginicons/google.png';
+import { Link } from "react-router-dom";
+
 
 export default function Login() {
 
@@ -28,7 +30,7 @@ export default function Login() {
           Anmelden
         </button>
         <div className="form-footer">
-          <a href="/signup">Noch kein Konto? Jetzt registrieren</a>
+          <Link to="/signup">Noch kein Konto? Jetzt registrieren</Link>
           <a href="/forgot-password">Passwort vergessen?</a>
         </div>
         <div className="google-login">
