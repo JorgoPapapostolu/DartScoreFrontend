@@ -7,6 +7,7 @@ import Footer from "./components/startpage/footer";
 import Login from "./components/loginpage/login";
 import Signup from './components/signuppage/signup';
 import Forgot from './components/forgot-password/forgot';
+import Dashboard from "./components/dashboard/dashboard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot-password" element={<Forgot />}/>
+        <Route path="/dashboard" element={<Dashboard />}/>
       </Routes>
       <Footer />
     </div>
