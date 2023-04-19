@@ -21,7 +21,7 @@ export default function Navbar() {
               <img src={linkedin} alt="linkedinicon" />
             </a>
             <a
-              href="https://github.com/JorgoPapapostolu"
+              href="https://github.com/JorgosPapapostolu"
               className="navbar-menu-item"
               target="_blank"
               rel="noreferrer"
