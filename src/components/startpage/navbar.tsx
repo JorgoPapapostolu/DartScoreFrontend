@@ -2,8 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import github from "../../img/navbaricons/github.png";
 import linkedin from "../../img/navbaricons/linkedin.png";
+import { useAuth } from "../loginpage/auth";
 
 export default function Navbar() {
+  const { isAuthenticated, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+  }
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -30,7 +37,16 @@ export default function Navbar() {
             </a>
           </div>
           <div className="navbar-divier">
-          <Link to="/login" className="navbar-user-button">Login</Link>
+            {!isAuthenticated && (
+              <Link to="/login" className="navbar-user-button">
+                Login
+              </Link>
+            )}
+            {isAuthenticated && (
+              <Link to="/" onClick={handleLogout} className="navbar-user-button">
+                Abmelden
+              </Link>
+            )}
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import "./login.css";
 import Google from "../../img/loginicons/google.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "./auth"; 
 
 interface LoginFormData {
   email: string;
@@ -16,12 +17,15 @@ export default function Login() {
   });
   const navigate = useNavigate();
 
+  const { setIsAuthenticated } = useAuth();
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     axios
       .post("https://fluffy-fly-bedclothes.cyclic.app/user/login", formData)
       .then((response) => {
         console.log(response.data);
+        setIsAuthenticated(true);
         navigate("/dashboard");
       })
       .catch((error) => {
@@ -36,6 +40,7 @@ export default function Login() {
       [id]: value,
     }));
   };
+  
 
   return (
     <div className="login-container">
