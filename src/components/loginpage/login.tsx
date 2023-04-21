@@ -71,7 +71,7 @@ export default function Login() {
         </button>
         <div className="form-footer">
           <Link to="/signup">Noch kein Konto? Jetzt registrieren</Link>
-          <a href="/forgot-password">Passwort vergessen?</a>
+          {/* <a href="/forgot-password">Passwort vergessen?</a> */}
         </div>
         <div className="google-login">
           <p>Einfache Anmeldung mit</p>

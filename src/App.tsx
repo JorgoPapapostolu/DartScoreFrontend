@@ -6,8 +6,9 @@ import Navbar from "./components/startpage/navbar";
 import Footer from "./components/startpage/footer";
 import Login from "./components/loginpage/login";
 import Signup from "./components/signuppage/signup";
-import Forgot from "./components/forgot-password/forgot";
+// import Forgot from "./components/forgot-password/forgot";
 import Dashboard from "./components/dashboard/dashboard";
+// import Reset from './components/reset-password/reset';
 import { AuthProvider, useAuth } from "./components/loginpage/auth";
 
 function AppRoutes() {
@@ -18,7 +19,8 @@ function AppRoutes() {
       <Route path="/" element={<StartPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/forgot-password" element={<Forgot />} />
+      {/* <Route path="/forgot-password" element={<Forgot />} />
+      <Route path="/reset-password" element={<Reset />} /> */}
       <Route
         path="/dashboard"
         element={
