@@ -24,7 +24,7 @@ export default function Signup() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     axios
-      .post("https://fluffy-fly-bedclothes.cyclic.app/user/signup", formData)
+      .post("https://chocolate-lion-wear.cyclic.app/user/signup", formData)
       .then((response) => {
         console.log(response.data);
         navigate('/login');

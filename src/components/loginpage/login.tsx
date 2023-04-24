@@ -22,7 +22,7 @@ export default function Login() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     axios
-      .post("https://fluffy-fly-bedclothes.cyclic.app/user/login", formData)
+      .post("https://chocolate-lion-wear.cyclic.app/user/login", formData)
       .then((response) => {
         console.log(response.data);
         setIsAuthenticated(true);
